@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@pixi/graphics-extras@7.x/dist/graphics-extras.min.js"></script>
+  </head>
+  <body>
+    <div id="canvas-container">
+      <div id="number_shapes_input">
+        <input type="text" id="number_current_shapes" readonly />
+        <input type="text" id="surface_occupied_shapes" readonly />
+      </div>
+      <div id="number_shapes">
+        <div class="input-group input-number-group">
+          <div class="input-group-button" id="dec_shapes">
+            <span class="input-number-decrement">-</span>
+          </div>
+          <input class="input-number" type="text" id="shapes_value" readonly />
+          <div class="input-group-button" id="inc_shapes">
+            <span class="input-number-increment">+</span>
+          </div>
+        </div>
+      </div>
+      <div id="gravity_control">
+        <div class="input-group input-number-group">
+          <div class="input-group-button" id="dec_gravity">
+            <span class="input-number-decrement">-</span>
+          </div>
+          <input class="input-number" type="text" id="gravity_value" readonly />
+          <div class="input-group-button" id="inc_gravity">
+            <span class="input-number-increment">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
